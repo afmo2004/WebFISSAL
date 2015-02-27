@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{616DDC6F-C782-4E0E-BB02-31AFFD291832}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FISSAL</RootNamespace>
+    <AssemblyName>FISSAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>packages\AjaxControlToolkit.7.1213\lib\45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=2.0.0.6, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>packages\WindowsAzure.Storage.2.1.0.3\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="SAV2000.Utility.HtmlSanitizer">
+      <HintPath>packages\HtmlSanitization.1.0.0\lib\SAV2000.Utility.HtmlSanitizer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI, Version=2009.2.701.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="banner\1.jpg" />
+    <Content Include="banner\13-hover.jpg" />
+    <Content Include="banner\13.jpg" />
+    <Content Include="banner\14.jpg" />
+    <Content Include="banner\2.jpg" />
+    <Content Include="banner\3.jpg" />
+    <Content Include="banner\4.png" />
+    <Content Include="banner\6.png" />
+    <Content Include="banner\8.jpg" />
+    <Content Include="banner\8-hover.jpg" />
+    <Content Include="banner\9.jpg" />
+    <Content Include="banner\9-hover.jpg" />
+    <Content Include="banner\10.jpg" />
+    <Content Include="banner\10-hover.jpg" />
+    <Content Include="banner\11.jpg" />
+    <Content Include="banner\11-hover.jpg" />
+    <Content Include="banner\12.jpg" />
+    <Content Include="banner\12-hover.jpg" />
+    <Content Include="beneficiarios.aspx" />
+    <Content Include="border.htc" />
+    <Content Include="cobertura.aspx" />
+    <Content Include="consulta-fua.aspx" />
+    <Content Include="consultas-reclamos.aspx" />
+    <Content Include="contactenos.aspx" />
+    <Content Include="convenios-contratos.aspx" />
+    <Content Include="convocatoria-cas.aspx" />
+    <Content Include="counter.xml" />
+    <Content Include="counter\0.png" />
+    <Content Include="counter\1.png" />
+    <Content Include="counter\2.png" />
+    <Content Include="counter\3.png" />
+    <Content Include="counter\4.png" />
+    <Content Include="counter\5.png" />
+    <Content Include="counter\6.png" />
+    <Content Include="counter\7.png" />
+    <Content Include="counter\8.png" />
+    <Content Include="counter\9.png" />
+    <Content Include="css\menu.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\styleAdmin.css" />
+    <Content Include="fotos\1.jpg" />
+    <Content Include="fotos\10.jpg" />
+    <Content Include="fotos\11.jpg" />
+    <Content Include="fotos\2.jpg" />
+    <Content Include="fotos\3.jpg" />
+    <Content Include="fotos\4.jpg" />
+    <Content Include="fotos\5.jpg" />
+    <Content Include="fotos\6.jpg" />
+    <Content Include="fotos\7.jpg" />
+    <Content Include="fotos\8.jpg" />
+    <Content Include="fotos\9.jpg" />
+    <Content Include="fuentes\bebasneue-webfont.svg" />
+    <Content Include="fuentes\oswald-webfont.svg" />
+    <Content Include="images\1396604830_document_pdf.png" />
+    <Content Include="images\1396604889_MetroUI_Word.png" />
+    <Content Include="images\1396604919_MetroUI_Excel.png" />
+    <Content Include="images\1396945737_exclamation-circle-frame_basic_red.png" />
+    <Content Include="images\abril.png" />
+    <Content Include="images\abrilb.png" />
+    <Content Include="images\abrilc.png" />
+    <Content Include="images\agosto.png" />
+    <Content Include="images\agostob.png" />
+    <Content Include="images\agostoc.png" />
+    <Content Include="images\ampliarbtn.png" />
+    <Content Include="images\archivo-notas.png" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\back.png" />
+    <Content Include="images\background.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bgbloquelinkl.png" />
+    <Content Include="images\bgbloques.png" />
+    <Content Include="images\bgbloquesmall.png" />
+    <Content Include="images\bginforight.jpg" />
+    <Content Include="images\bginforight.png" />
+    <Content Include="images\bg_descripcion.png" />
+    <Content Include="images\bg_header.jpg" />
+    <Content Include="images\bg_menu.jpg" />
+    <Content Include="images\bg_menu100.jpg" />
+    <Content Include="images\bg_menu_hover.jpg" />
+    <Content Include="images\bg_menu_hover100.jpg" />
+    <Content Include="images\bg_pattern.jpg" />
+    <Content Include="images\blurry.jpg" />
+    <Content Include="images\botleft.png" />
+    <Content Include="images\botones.png" />
+    <Content Include="images\botright.png" />
+    <Content Include="images\brochoure3.jpg" />
+    <Content Include="images\brochoure4.jpg" />
+    <Content Include="images\btn_white.png" />
+    <Content Include="images\calcular.png" />
+    <Content Include="images\calendario.png" />
+    <Content Include="images\CENTRAL.jpg" />
+    <Content Include="images\central.png" />
+    <Content Include="images\cerrar_sesion.png" />
+    <Content Include="images\contador.jpg" />
+    <Content Include="images\conv_cas.png" />
+    <Content Include="images\correo.jpg" />
+    <Content Include="images\correo.png" />
+    <Content Include="images\descargar.png" />
+    <Content Include="images\diciembre.png" />
+    <Content Include="images\diciembreb.png" />
+    <Content Include="images\diciembrec.png" />
+    <Content Include="images\difusion.jpg" />
+    <Content Include="images\download.png" />
+    <Content Include="images\downloadwhite.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\ejemplo.jpg" />
+    <Content Include="images\ejemplocalendar.jpg" />
+    <Content Include="images\enero.png" />
+    <Content Include="images\enerob.png" />
+    <Content Include="images\eneroc.png" />
+    <Content Include="images\equipo-tecnico.png" />
+    <Content Include="images\esperanza-hover.png" />
+    <Content Include="images\esperanza.png" />
+    <Content Include="images\facebook.jpg" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\fb-hover.png" />
+    <Content Include="images\fb.png" />
+    <Content Include="images\febrero.png" />
+    <Content Include="images\febrerob.png" />
+    <Content Include="images\febreroc.png" />
+    <Content Include="images\fissal_iso.png" />
+    <Content Include="images\fissal_iso100.png" />
+    <Content Include="images\foot-enlaces.png" />
+    <Content Include="images\foot-info.png" />
+    <Content Include="images\foot-notvid.png" />
+    <Content Include="images\foto-ejemplo.jpg" />
+    <Content Include="images\foto_seccion_prev.jpg" />
+    <Content Include="images\foto_seccion_prev2.jpg" />
+    <Content Include="images\foto_seccion_prev3.jpg" />
+    <Content Include="images\foto_seccion_prev4.jpg" />
+    <Content Include="images\gradback.png" />
+    <Content Include="images\gradhead.png" />
+    <Content Include="images\gradhover.png" />
+    <Content Include="images\Grilla.Flecha.gif" />
+    <Content Include="images\Grilla_Eliminar.gif" />
+    <Content Include="images\Grilla_Seleccionar.gif" />
+    <Content Include="images\fissal.ico" />
+    <Content Include="images\header-enlaces-contactt.png" />
+    <Content Include="images\header-enlaces.png" />
+    <Content Include="images\header-info-des.png" />
+    <Content Include="images\header-info.png" />
+    <Content Include="images\header-notvid-desnot.png" />
+    <Content Include="images\header-notvid.png" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\infosalud.jpg" />
+    <Content Include="images\infosalud.png" />
+    <Content Include="images\info_contacto.png" />
+    <Content Include="images\info_inicio.png" />
+    <Content Include="images\info_minsa.png" />
+    <Content Include="images\julio.png" />
+    <Content Include="images\juliob.png" />
+    <Content Include="images\julioc.png" />
+    <Content Include="images\junio.png" />
+    <Content Include="images\juniob.png" />
+    <Content Include="images\junioc.png" />
+    <Content Include="images\left.png" />
+    <Content Include="images\logoexcel.png" />
+    <Content Include="images\logopdf.jpg" />
+    <Content Include="images\logoword.png" />
+    <Content Include="images\manual5.jpg" />
+    <Content Include="images\manual6.jpg" />
+    <Content Include="images\marzo.png" />
+    <Content Include="images\marzob.png" />
+    <Content Include="images\marzoc.png" />
+    <Content Include="images\mat-com-ejem.jpg" />
+    <Content Include="images\matcom.jpg" />
+    <Content Include="images\matcom2.jpg" />
+    <Content Include="images\matcom3.jpg" />
+    <Content Include="images\matcom4.jpg" />
+    <Content Include="images\matcom5.jpg" />
+    <Content Include="images\matcom6.jpg" />
+    <Content Include="images\mayo.png" />
+    <Content Include="images\mayob.png" />
+    <Content Include="images\mayoc.png" />
+    <Content Include="images\mef-hover.jpg" />
+    <Content Include="images\mef.jpg" />
+    <Content Include="images\minsa-hover.jpg" />
+    <Content Include="images\minsa.jpg" />
+    <Content Include="images\minsa_iso.png" />
+    <Content Include="images\not-ejemplo.jpg" />
+    <Content Include="images\notejemploseccion1.jpg" />
+    <Content Include="images\notejemploseccion2.jpg" />
+    <Content Include="images\noviembre.png" />
+    <Content Include="images\noviembreb.png" />
+    <Content Include="images\noviembrec.png" />
+    <Content Include="images\octubre.png" />
+    <Content Include="images\octubreb.png" />
+    <Content Include="images\octubrec.png" />
+    <Content Include="images\pattern-head.png" />
+    <Content Include="images\pattern.gif" />
+    <Content Include="images\pattern.png" />
+    <Content Include="images\patternb-head.png" />
+    <Content Include="images\patternb.png" />
+    <Content Include="images\peru-hover.jpg" />
+    <Content Include="images\peru.jpg" />
+    <Content Include="images\play_video_seccion.png" />
+    <Content Include="images\propuestacuadro.jpg" />
+    <Content Include="images\propuestacuadro.png" />
+    <Content Include="images\reforma-hover.jpg" />
+    <Content Include="images\reforma.jpg" />
+    <Content Include="images\right.png" />
+    <Content Include="images\rombo.png" />
+    <Content Include="images\save.gif" />
+    <Content Include="images\serv_civil.png" />
+    <Content Include="images\setiembre.png" />
+    <Content Include="images\setiembreb.png" />
+    <Content Include="images\setiembrec.png" />
+    <Content Include="images\sis-hover.jpg" />
+    <Content Include="images\sis.jpg" />
+    <Content Include="images\social.png" />
+    <Content Include="images\socialbottom\blogger.png" />
+    <Content Include="images\socialbottom\digg.png" />
+    <Content Include="images\socialbottom\facebook.png" />
+    <Content Include="images\socialbottom\feed.png" />
+    <Content Include="images\socialbottom\google.png" />
+    <Content Include="images\socialbottom\myspace.png" />
+    <Content Include="images\socialbottom\twitter.png" />
+    <Content Include="images\socialbtn.jpg" />
+    <Content Include="images\tit-enlaces1.png" />
+    <Content Include="images\tit-enlaces2.png" />
+    <Content Include="images\tit-enlaces3.png" />
+    <Content Include="images\tit-info1.png" />
+    <Content Include="images\tit-info2.png" />
+    <Content Include="images\titnot.png" />
+    <Content Include="images\titvid.png" />
+    <Content Include="images\triptico2.jpg" />
+    <Content Include="images\vermasnot.png" />
+    <Content Include="images\vermasvid.jpg" />
+    <Content Include="images\vermasvid.png" />
+    <Content Include="images\video-ejm.png" />
+    <Content Include="images\volante1.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-te-1.4.0.min.js" />
+    <Content Include="material-comunicacional.aspx" />
+    <Content Include="normas-legales.aspx" />
+    <Content Include="notas.aspx" />
+    <Content Include="noticia.aspx" />
+    <Content Include="quienes-somos.aspx" />
+    <Content Include="slider\arrows.png" />
+    <Content Include="slider\bg.png" />
+    <Content Include="slider\bullet.png" />
+    <Content Include="slider\jquery.js" />
+    <Content Include="slider\script.js" />
+    <Content Include="slider\style.css" />
+    <Content Include="slider\triangle.png" />
+    <Content Include="slider\wowslider.js" />
+    <Content Include="transferencias-calendario.aspx" />
+    <Content Include="transferencias-carta.aspx" />
+    <Content Include="transferencias-fua.aspx" />
+    <Content Include="transferencias.aspx" />
+    <Content Include="uc\ucBeneficiarios.ascx" />
+    <Content Include="uc\ucBeneficiarios2.ascx" />
+    <Content Include="uc\ucCabecera.ascx" />
+    <Content Include="uc\ucCabeceraHome.ascx" />
+    <Content Include="uc\ucCobertura.ascx" />
+    <Content Include="uc\ucCobertura2.ascx" />
+    <Content Include="uc\ucDifusion.ascx" />
+    <Content Include="uc\ucEnlaces.ascx" />
+    <Content Include="uc\ucMenu.ascx" />
+    <Content Include="uc\ucNoticia.ascx" />
+    <Content Include="uc\ucPie.ascx" />
+    <Content Include="uc\ucRedesSociales.ascx" />
+    <Content Include="uc\ucServicioEnLinea.ascx" />
+    <Content Include="uc\ucSubmenu.ascx" />
+    <Content Include="uc\ucVideo.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="wfAsignarOpcion.aspx" />
+    <Content Include="wfContactenosLista.aspx" />
+    <Content Include="wfControlLista.aspx" />
+    <Content Include="wfFotografiaLista.aspx" />
+    <Content Include="wfLogin.aspx" />
+    <Content Include="wfMaterialLista.aspx" />
+    <Content Include="wfNormasLegalesLista.aspx" />
+    <Content Include="wfNoticiaLista.aspx" />
+    <Content Include="wfPaginaLista.aspx" />
+    <Content Include="wfPanelControl.aspx" />
+    <Content Include="wfParametroLista.aspx" />
+    <Content Include="wfPerfilLista.aspx" />
+    <Content Include="wfSugerenciaLista.aspx" />
+    <Content Include="wfUbicacionControl.aspx" />
+    <Content Include="wfUsuarioLista.aspx" />
+    <Content Include="wfVideoLista.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="AppUtils.cs" />
+    <Compile Include="beneficiarios.aspx.cs">
+      <DependentUpon>beneficiarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="beneficiarios.aspx.designer.cs">
+      <DependentUpon>beneficiarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cobertura.aspx.cs">
+      <DependentUpon>cobertura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cobertura.aspx.designer.cs">
+      <DependentUpon>cobertura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consulta-fua.aspx.cs">
+      <DependentUpon>consulta-fua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consulta-fua.aspx.designer.cs">
+      <DependentUpon>consulta-fua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultas-reclamos.aspx.cs">
+      <DependentUpon>consultas-reclamos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultas-reclamos.aspx.designer.cs">
+      <DependentUpon>consultas-reclamos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactenos.aspx.cs">
+      <DependentUpon>contactenos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactenos.aspx.designer.cs">
+      <DependentUpon>contactenos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="convenios-contratos.aspx.cs">
+      <DependentUpon>convenios-contratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="convenios-contratos.aspx.designer.cs">
+      <DependentUpon>convenios-contratos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="convocatoria-cas.aspx.cs">
+      <DependentUpon>convocatoria-cas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="convocatoria-cas.aspx.designer.cs">
+      <DependentUpon>convocatoria-cas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="material-comunicacional.aspx.cs">
+      <DependentUpon>material-comunicacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="material-comunicacional.aspx.designer.cs">
+      <DependentUpon>material-comunicacional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mpAdmin.Master.cs">
+      <DependentUpon>mpAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mpAdmin.Master.designer.cs">
+      <DependentUpon>mpAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="mpAdmin2.Master.cs">
+      <DependentUpon>mpAdmin2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mpAdmin2.Master.designer.cs">
+      <DependentUpon>mpAdmin2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MPHome.Master.cs">
+      <DependentUpon>MPHome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MPHome.Master.designer.cs">
+      <DependentUpon>MPHome.Master</DependentUpon>
+    </Compile>
+    <Compile Include="mpHome2.Master.cs">
+      <DependentUpon>mpHome2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mpHome2.Master.designer.cs">
+      <DependentUpon>mpHome2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="normas-legales.aspx.cs">
+      <DependentUpon>normas-legales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="normas-legales.aspx.designer.cs">
+      <DependentUpon>normas-legales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notas.aspx.cs">
+      <DependentUpon>notas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notas.aspx.designer.cs">
+      <DependentUpon>notas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="noticia.aspx.cs">
+      <DependentUpon>noticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="noticia.aspx.designer.cs">
+      <DependentUpon>noticia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quienes-somos.aspx.cs">
+      <DependentUpon>quienes-somos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quienes-somos.aspx.designer.cs">
+      <DependentUpon>quienes-somos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transferencias-calendario.aspx.cs">
+      <DependentUpon>transferencias-calendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transferencias-calendario.aspx.designer.cs">
+      <DependentUpon>transferencias-calendario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transferencias-carta.aspx.cs">
+      <DependentUpon>transferencias-carta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transferencias-carta.aspx.designer.cs">
+      <DependentUpon>transferencias-carta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transferencias-fua.aspx.cs">
+      <DependentUpon>transferencias-fua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transferencias-fua.aspx.designer.cs">
+      <DependentUpon>transferencias-fua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transferencias.aspx.cs">
+      <DependentUpon>transferencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transferencias.aspx.designer.cs">
+      <DependentUpon>transferencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucBeneficiarios.ascx.cs">
+      <DependentUpon>ucBeneficiarios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucBeneficiarios.ascx.designer.cs">
+      <DependentUpon>ucBeneficiarios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucBeneficiarios2.ascx.cs">
+      <DependentUpon>ucBeneficiarios2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucBeneficiarios2.ascx.designer.cs">
+      <DependentUpon>ucBeneficiarios2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucCabecera.ascx.cs">
+      <DependentUpon>ucCabecera.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucCabecera.ascx.designer.cs">
+      <DependentUpon>ucCabecera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucCabeceraHome.ascx.cs">
+      <DependentUpon>ucCabeceraHome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucCabeceraHome.ascx.designer.cs">
+      <DependentUpon>ucCabeceraHome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucCobertura.ascx.cs">
+      <DependentUpon>ucCobertura.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucCobertura.ascx.designer.cs">
+      <DependentUpon>ucCobertura.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucCobertura2.ascx.cs">
+      <DependentUpon>ucCobertura2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucCobertura2.ascx.designer.cs">
+      <DependentUpon>ucCobertura2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucDifusion.ascx.cs">
+      <DependentUpon>ucDifusion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucDifusion.ascx.designer.cs">
+      <DependentUpon>ucDifusion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucEnlaces.ascx.cs">
+      <DependentUpon>ucEnlaces.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucEnlaces.ascx.designer.cs">
+      <DependentUpon>ucEnlaces.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucMenu.ascx.cs">
+      <DependentUpon>ucMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucMenu.ascx.designer.cs">
+      <DependentUpon>ucMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucNoticia.ascx.cs">
+      <DependentUpon>ucNoticia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucNoticia.ascx.designer.cs">
+      <DependentUpon>ucNoticia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucPie.ascx.cs">
+      <DependentUpon>ucPie.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucPie.ascx.designer.cs">
+      <DependentUpon>ucPie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucRedesSociales.ascx.cs">
+      <DependentUpon>ucRedesSociales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucRedesSociales.ascx.designer.cs">
+      <DependentUpon>ucRedesSociales.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucServicioEnLinea.ascx.cs">
+      <DependentUpon>ucServicioEnLinea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucServicioEnLinea.ascx.designer.cs">
+      <DependentUpon>ucServicioEnLinea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucSubmenu.ascx.cs">
+      <DependentUpon>ucSubmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucSubmenu.ascx.designer.cs">
+      <DependentUpon>ucSubmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ucVideo.ascx.cs">
+      <DependentUpon>ucVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ucVideo.ascx.designer.cs">
+      <DependentUpon>ucVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="wfAsignarOpcion.aspx.cs">
+      <DependentUpon>wfAsignarOpcion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfAsignarOpcion.aspx.designer.cs">
+      <DependentUpon>wfAsignarOpcion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfContactenosLista.aspx.cs">
+      <DependentUpon>wfContactenosLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfContactenosLista.aspx.designer.cs">
+      <DependentUpon>wfContactenosLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfControlLista.aspx.cs">
+      <DependentUpon>wfControlLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfControlLista.aspx.designer.cs">
+      <DependentUpon>wfControlLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfFotografiaLista.aspx.cs">
+      <DependentUpon>wfFotografiaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfFotografiaLista.aspx.designer.cs">
+      <DependentUpon>wfFotografiaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfLogin.aspx.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfLogin.aspx.designer.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfMaterialLista.aspx.cs">
+      <DependentUpon>wfMaterialLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfMaterialLista.aspx.designer.cs">
+      <DependentUpon>wfMaterialLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfNormasLegalesLista.aspx.cs">
+      <DependentUpon>wfNormasLegalesLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfNormasLegalesLista.aspx.designer.cs">
+      <DependentUpon>wfNormasLegalesLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfNoticiaLista.aspx.cs">
+      <DependentUpon>wfNoticiaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfNoticiaLista.aspx.designer.cs">
+      <DependentUpon>wfNoticiaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfPaginaLista.aspx.cs">
+      <DependentUpon>wfPaginaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfPaginaLista.aspx.designer.cs">
+      <DependentUpon>wfPaginaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfPanelControl.aspx.cs">
+      <DependentUpon>wfPanelControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfPanelControl.aspx.designer.cs">
+      <DependentUpon>wfPanelControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfParametroLista.aspx.cs">
+      <DependentUpon>wfParametroLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfParametroLista.aspx.designer.cs">
+      <DependentUpon>wfParametroLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfPerfilLista.aspx.cs">
+      <DependentUpon>wfPerfilLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfPerfilLista.aspx.designer.cs">
+      <DependentUpon>wfPerfilLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfSugerenciaLista.aspx.cs">
+      <DependentUpon>wfSugerenciaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfSugerenciaLista.aspx.designer.cs">
+      <DependentUpon>wfSugerenciaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfUbicacionControl.aspx.cs">
+      <DependentUpon>wfUbicacionControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfUbicacionControl.aspx.designer.cs">
+      <DependentUpon>wfUbicacionControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfUsuarioLista.aspx.cs">
+      <DependentUpon>wfUsuarioLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfUsuarioLista.aspx.designer.cs">
+      <DependentUpon>wfUsuarioLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfVideoLista.aspx.cs">
+      <DependentUpon>wfVideoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfVideoLista.aspx.designer.cs">
+      <DependentUpon>wfVideoLista.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="fuentes\bebasneue-webfont.eot" />
+    <Content Include="fuentes\bebasneue-webfont.ttf" />
+    <Content Include="fuentes\bebasneue-webfont.woff" />
+    <Content Include="fuentes\oswald-webfont.eot" />
+    <Content Include="fuentes\oswald-webfont.ttf" />
+    <Content Include="fuentes\oswald-webfont.woff" />
+    <Content Include="images\socialbottom\Thumbs.db" />
+    <Content Include="mpAdmin.Master" />
+    <Content Include="mpHome2.Master" />
+    <Content Include="materiales\1.pdf" />
+    <Content Include="materiales\2.pdf" />
+    <Content Include="normaslegales\RJEF02-2014.pdf" />
+    <Content Include="normaslegales\001-2013-SA.pdf" />
+    <Content Include="normaslegales\009-2012-SA.pdf" />
+    <Content Include="normaslegales\005-2012-SA.pdf" />
+    <Content Include="normaslegales\008-2010-SA.pdf" />
+    <Content Include="normaslegales\124-2013.pdf" />
+    <Content Include="normaslegales\215-2013.pdf" />
+    <Content Include="normaslegales\319-2012.pdf" />
+    <Content Include="normaslegales\325-2012.pdf" />
+    <Content Include="normaslegales\29698.pdf" />
+    <Content Include="normaslegales\29761.pdf" />
+    <Content Include="normaslegales\136-2012.pdf" />
+    <Content Include="normaslegales\197-2012.pdf" />
+    <Content Include="convocatoria\2014-01-01ec.pdf" />
+    <Content Include="convocatoria\2014-01-01ee.pdf" />
+    <Content Include="convocatoria\2014-01-01rf.pdf" />
+    <Content Include="convocatoria\2014-01-02ec.pdf" />
+    <Content Include="convocatoria\2014-01-03ec.pdf" />
+    <Content Include="convocatoria\2014-01-03ee.pdf" />
+    <Content Include="convocatoria\2014-01-03rf.pdf" />
+    <Content Include="convocatoria\2014-01-04ec.pdf" />
+    <Content Include="convocatoria\2014-01-04ee.pdf" />
+    <Content Include="convocatoria\2014-01-04rf.pdf" />
+    <Content Include="convocatoria\2014-01-05ec.pdf" />
+    <Content Include="convocatoria\2014-01-05ee.pdf" />
+    <Content Include="convocatoria\2014-01-05rf.pdf" />
+    <Content Include="convocatoria\2014-01-06ec.pdf" />
+    <Content Include="convocatoria\2014-01bases.pdf" />
+    <Content Include="convocatoria\2014-01presentacion.pdf" />
+    <Content Include="convocatoria\2014-01anexo2.pdf" />
+    <Content Include="convocatoria\2014-01anexo3.pdf" />
+    <Content Include="convocatoria\2014-01anexo1.xls" />
+    <Content Include="convocatoria\2013-01-01ec.pdf" />
+    <Content Include="convocatoria\2013-01-01ee.pdf" />
+    <Content Include="convocatoria\2013-01-02ec.pdf" />
+    <Content Include="convocatoria\2013-01-03ec.pdf" />
+    <Content Include="convocatoria\2013-01-04ec.pdf" />
+    <Content Include="convocatoria\2013-01-04ee.pdf" />
+    <Content Include="convocatoria\2013-01-04rf.pdf" />
+    <Content Include="convocatoria\2013-01-05ec.pdf" />
+    <Content Include="convocatoria\2013-01-05ee.pdf" />
+    <Content Include="convocatoria\2013-01-05rf.pdf" />
+    <Content Include="convocatoria\2013-01-06ec.pdf" />
+    <Content Include="convocatoria\2013-01-06ee.pdf" />
+    <Content Include="convocatoria\2013-01-06rf.pdf" />
+    <Content Include="convocatoria\2013-01-07ec.pdf" />
+    <Content Include="convocatoria\2013-01-07ee.pdf" />
+    <Content Include="convocatoria\2013-01-08ec.pdf" />
+    <Content Include="convocatoria\2013-01-08ee.pdf" />
+    <Content Include="convocatoria\2013-01-08rf.pdf" />
+    <Content Include="convocatoria\2013-01-09ec.pdf" />
+    <Content Include="convocatoria\2013-01-09ee.pdf" />
+    <Content Include="convocatoria\2013-01anexo2.pdf" />
+    <Content Include="convocatoria\2013-01anexo3.pdf" />
+    <Content Include="convocatoria\2013-01bases.pdf" />
+    <Content Include="convocatoria\2013-01notaaclaratoria.pdf" />
+    <Content Include="convocatoria\2013-01presentacion.pdf" />
+    <Content Include="convocatoria\2013-01anexo1.xls" />
+    <Content Include="convocatoria\2013-02-01ec.pdf" />
+    <Content Include="convocatoria\2013-02-01ee.pdf" />
+    <Content Include="convocatoria\2013-02-01rf.pdf" />
+    <Content Include="convocatoria\2013-02presentacion.doc" />
+    <Content Include="convocatoria\2013-02bases.pdf" />
+    <Content Include="convocatoria\2013-01anexo2.doc" />
+    <Content Include="convocatoria\2013-01anexo3.doc" />
+    <Content Include="convocatoria\2013-02anexo1.xls" />
+    <Content Include="materiales\3.pdf" />
+    <Content Include="materiales\4.pdf" />
+    <Content Include="materiales\5.pdf" />
+    <Content Include="mpAdmin2.Master" />
+    <Content Include="MPHome.Master" />
+    <None Include="Properties\PublishProfiles\FISSAL.pubxml" />
+    <Content Include="transferencias\2014RJ074.xlsx" />
+    <Content Include="transferencias\2014Febrero.xlsx" />
+    <Content Include="transferencias\2014RJ058.xlsx" />
+    <Content Include="transferencias\2014RJ080.xlsx" />
+    <Content Include="transferencias\2013Diciembre.xlsx" />
+    <Content Include="transferencias\2013DiciembreI.xlsx" />
+    <Content Include="transferencias\2013DiciembreII.xlsx" />
+    <Content Include="transferencias\2013Agosto.xlsx" />
+    <Content Include="transferencias\2013Noviembre.xlsx" />
+    <Content Include="transferencias\2013SetiembreI.xlsx" />
+    <Content Include="transferencias\2013SetiembreII.xlsx" />
+    <Content Include="transferencias\2013Abril.xlsx" />
+    <Content Include="transferencias\2013Julio.xlsx" />
+    <Content Include="transferencias\2013JulioI.xlsx" />
+    <Content Include="transferencias\2013Junio.xlsx" />
+    <Content Include="transferencias\2013Mayo.xlsx" />
+    <Content Include="transferencias\2013Enero.xlsx" />
+    <Content Include="transferencias\2013Febrero.xlsx" />
+    <Content Include="transferencias\2013Marzo.xlsx" />
+    <Content Include="transferencias\2013MarzoI.xlsx" />
+    <Content Include="transferencias\2012agosto.xlsx" />
+    <Content Include="transferencias\2012diciembre.xlsx" />
+    <Content Include="transferencias\2012noviembre.xls" />
+    <Content Include="transferencias\2012octubre.xlsx" />
+    <Content Include="transferencias\2012setiembre.xlsx" />
+    <Content Include="transferencias\2014RJ058.pdf" />
+    <Content Include="transferencias\2014RJ074.pdf" />
+    <Content Include="transferencias\2014RJ080.pdf" />
+    <Content Include="transferencias\2012agosto.pdf" />
+    <Content Include="transferencias\2012diciembre.pdf" />
+    <Content Include="transferencias\2012noviembre.pdf" />
+    <Content Include="transferencias\2012octubre.pdf" />
+    <Content Include="transferencias\2012setiembre.pdf" />
+    <Content Include="transferencias\2012setiembrei.pdf" />
+    <Content Include="transferencias\2013abril.pdf" />
+    <Content Include="transferencias\2013agosto.pdf" />
+    <Content Include="transferencias\2013diciembre.pdf" />
+    <Content Include="transferencias\2013diciembrei.pdf" />
+    <Content Include="transferencias\2013diciembreii.pdf" />
+    <Content Include="transferencias\2013diciembreiii.pdf" />
+    <Content Include="transferencias\2013diciembreiv.pdf" />
+    <Content Include="transferencias\2013enero.pdf" />
+    <Content Include="transferencias\2013febrero.pdf" />
+    <Content Include="transferencias\2013julio.pdf" />
+    <Content Include="transferencias\2013julioi.pdf" />
+    <Content Include="transferencias\2013junio.pdf" />
+    <Content Include="transferencias\2013marzo.pdf" />
+    <Content Include="transferencias\2013marzoi.pdf" />
+    <Content Include="transferencias\2013mayo.pdf" />
+    <Content Include="transferencias\2013noviembre.pdf" />
+    <Content Include="transferencias\2013setiembre.pdf" />
+    <Content Include="transferencias\2013setiembrei.pdf" />
+    <Content Include="transferencias\2013setiembreii.pdf" />
+    <None Include="Properties\PublishProfiles\Fissal2.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{4ac04c9e-911f-4674-99ee-f903839f8bcc}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="Entidad\Entidad.csproj">
+      <Project>{2675374d-2711-495d-8dbe-045a55197e94}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="Negocio\Negocio.csproj">
+      <Project>{85d37ff5-2be4-4195-a2d7-4952e42805d0}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6707</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4637/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

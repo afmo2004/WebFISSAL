@@ -1,0 +1,141 @@
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+  margin: 0;
+  padding: 0 8px;
+  position: relative;
+  border: 0;
+  line-height: 42px;
+  box-sizing: content-box;
+  color:#FFFFFF;
+  font-weight:bold;                  
+}
+#cssmenu {
+  height: 42px;
+  background-image:url(../images/bg_menu.jpg);
+  background-repeat:repeat-x;
+  padding-left:25px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  z-index:999;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 40px;
+  padding: 0 15px;
+  text-decoration: none;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu > ul {
+  float: left;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li > a {
+  color: #000;
+  font-size: 12px;
+}
+#cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #0a70ab;
+  margin-left: -10px;
+}
+#cssmenu > ul > li:first-child > a {
+}
+#cssmenu > ul > li.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #0a70ab;
+  margin-left: -10px;
+}
+#cssmenu > ul > li.active > a {
+  background-image:url(../images/bg_menu_hover.jpg);
+
+  background-repeat:repeat-x;
+}
+#cssmenu > ul > li:hover > a {
+  background-image:url(../images/bg_menu_hover.jpg);
+  background-repeat:repeat-x;
+}
+#cssmenu .has-sub {
+  z-index: 1000;     
+}
+#cssmenu .has-sub:hover > ul {
+  display: block; 
+}
+#cssmenu .has-sub ul {
+  display: none;
+  text-align:left;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  right: -28px;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  
+}
+#cssmenu .has-sub ul:hover {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+#cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#cssmenu .has-sub ul li a {
+  background: #db000b;
+  border-bottom: 1px dotted #ff0f1b;
+  filter: none;
+  font-size: 11px;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+  color: #ffffff;
+}
+#cssmenu .has-sub ul li:hover a {
+  background: #a80008;
+
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #a80008;
+  border-bottom: 1px dotted #ff0f1b;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #8f0007;
+}

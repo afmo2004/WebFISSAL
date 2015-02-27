@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2675374D-2711-495D-8DBE-045A55197E94}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FISSAL.Entidad</RootNamespace>
+    <AssemblyName>FISSAL.Entidad</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contacto.cs" />
+    <Compile Include="Control.cs" />
+    <Compile Include="ControlDetalle.cs" />
+    <Compile Include="Disa.cs" />
+    <Compile Include="Fotografia.cs" />
+    <Compile Include="Material.cs" />
+    <Compile Include="NormasLegales.cs" />
+    <Compile Include="Noticia.cs" />
+    <Compile Include="NoticiaFotografia.cs" />
+    <Compile Include="Opcion.cs" />
+    <Compile Include="Pagina.cs" />
+    <Compile Include="PaginaControl.cs" />
+    <Compile Include="Parametro.cs" />
+    <Compile Include="ParametroDetalle.cs" />
+    <Compile Include="Perfil.cs" />
+    <Compile Include="PerfilOpcion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seccion.cs" />
+    <Compile Include="SeccionControl.cs" />
+    <Compile Include="Sugerencia.cs" />
+    <Compile Include="Ubigeo.cs" />
+    <Compile Include="UnidadEjecutora.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Video.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

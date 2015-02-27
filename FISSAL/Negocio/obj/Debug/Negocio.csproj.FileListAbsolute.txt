@@ -1,0 +1,36 @@
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.dll
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.pdb
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Datos.dll
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.dll
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Datos.pdb
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.pdb
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.dll
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.pdb
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.dll
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.pdb
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Datos.dll
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.dll
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Datos.pdb
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.pdb
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.dll
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.pdb
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.dll
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.dll
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.pdb
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Datos.dll
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.dll
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Datos.pdb
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.pdb
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.pdb
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.dll
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\bin\Debug\FISSAL.Negocio.pdb
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\bin\Debug\FISSAL.Datos.dll
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.dll
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\bin\Debug\FISSAL.Datos.pdb
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\bin\Debug\FISSAL.Entidad.pdb
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.dll
+D:\FISSAL\Codigo Fuente Web\FISSAL\Negocio\obj\Debug\FISSAL.Negocio.pdb

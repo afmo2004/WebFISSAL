@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPHome.master.cs" Inherits="FISSAL.MPHome" %>
+
+<%@ Register src="uc/ucCabecera.ascx" tagname="ucCabecera" tagprefix="uc1" %>
+<%@ Register src="uc/ucPie.ascx" tagname="ucPie" tagprefix="uc2" %>
+<%@ Register src="uc/ucMenu.ascx" tagname="ucMenu" tagprefix="uc3" %>
+<%@ Register src="uc/ucCabeceraHome.ascx" tagname="ucCabeceraHome" tagprefix="uc4" %>
+
+<%@ Register src="uc/ucSubmenu.ascx" tagname="ucSubmenu" tagprefix="uc5" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/fissal.ico" type="image/x-icon" />
+    <title>FISSAL | Fondo Intangible Solidario de Salud</title>
+    <link rel="stylesheet" type="text/css" href="slider/style.css" media="screen" />
+	<style type="text/css">a#vlb{display:none}</style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrap-full">
+        <uc1:ucCabecera ID="ucCabecera1" runat="server" />
+        <uc3:ucMenu ID="ucMenu1" runat="server" />
+        <div id="contenedor-central">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <uc2:ucPie ID="ucPie1" runat="server" />
+    </div>
+    </form>
+</body>
+</html>

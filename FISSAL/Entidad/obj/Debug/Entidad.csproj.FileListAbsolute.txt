@@ -1,0 +1,19 @@
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.dll
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.pdb
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.dll
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.pdb
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.dll
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.pdb
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.dll
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.pdb
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.dll
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.pdb
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.dll
+C:\Users\gduff_000\Desktop\FISSAL\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.pdb
+D:\MMILLA\Personal\Desarrollo\FISSAL\FISSAL\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
+D:\Personal\Codigo\Desarrollo\FISSAL\FISSAL\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
+D:\FISSAL\Codigo Fuente Web\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.dll
+D:\FISSAL\Codigo Fuente Web\FISSAL\Entidad\bin\Debug\FISSAL.Entidad.pdb
+D:\FISSAL\Codigo Fuente Web\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.dll
+D:\FISSAL\Codigo Fuente Web\FISSAL\Entidad\obj\Debug\FISSAL.Entidad.pdb

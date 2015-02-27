@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mpAdmin.master.cs" Inherits="FISSAL.mpAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Panel de Administración - FISSAL</title>
+    <link href="css/styleAdmin.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajaxToolkit:ToolkitScriptManager>
+    <div id="wrap">
+        <div id="header">
+            <div id="iso_fissal">
+                <img src="images/fissal_iso.png" alt="FISSAL" title="FISSAL" />
+            </div>
+            <div id="iso_login">
+                <asp:Literal ID="litBienvenida" runat="server"></asp:Literal><asp:ImageButton ID="imgCerrarSesion" runat="server" OnClick="imgCerrarSesion_Click" ImageUrl="~/images/cerrar_sesion.png" ToolTip="Cerrar Sesión" CausesValidation="False" />
+            </div>
+        </div>
+        <div id="cuerpo">
+            <div id="menu">
+                <table style="text-align:left;">
+                    <tr><td>
+                    <asp:TreeView ID="tvwMenu" runat="server">
+                        <Nodes>
+                            <asp:TreeNode NavigateUrl="~/wfPaginaLista.aspx" Text="Páginas" Value="Lista de Páginas"></asp:TreeNode>
+                            <asp:TreeNode Text="Noticias" Value="Lista de Noticias" NavigateUrl="~/wfNoticiaLista.aspx">
+                            </asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/wfFotografiaLista.aspx" Text="Fotos" Value="Fotos"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/wfControlLista.aspx" Text="Controles" Value="Adm. Control"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/wfMaterialLista.aspx" Text="Material Difusión" Value="Material Difusión"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/wfVideoLista.aspx" Text="Videos" Value="Videos"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/wfNormasLegalesLista.aspx" Text="Normas Legales" Value="Normas Legales"></asp:TreeNode>
+                            <asp:TreeNode Text="Seguridad" Value="Seguridad">
+                                <asp:TreeNode NavigateUrl="~/wfUsuarioLista.aspx" Text="Usuarios" Value="Usuarios"></asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="~/wfPerfilLista.aspx" Text="Perfiles" Value="Perfiles"></asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                    </td></tr>
+                </table>
+            </div>
+            <div id="contenido">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
